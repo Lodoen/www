@@ -1,0 +1,148 @@
+#navigation-hamburger,
+nav ul {
+    display: none;
+}
+
+body,
+.cards-wrapper {
+    display: grid;
+}
+
+.cards-wrapper,
+nav ul,
+.about-me {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+body,
+h2 {
+    margin: 0;
+}
+
+.active,
+nav ul li a:hover,
+.cards-wrapper section a:hover,
+.link:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+
+.cards-wrapper section a,
+nav ul li a,
+.link,
+footer a {
+    text-decoration: none;
+}
+
+.navigation-hamburger,
+footer {
+    text-align: center;
+}
+
+.cards-wrapper,
+.about-me {
+    padding: 25px;
+}
+
+.cards-wrapper h3,
+.cards-wrapper section a {
+    font-style: italic;
+}
+
+nav,
+.navigation-hamburger,
+nav ul li a,
+footer,
+footer a {
+    color: #fff;
+    background-color: rgb(39, 39, 39);
+}
+
+body {
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.cards-wrapper {
+    gap: 30px;
+    justify-content: center;
+}
+
+.cards-wrapper h1 {
+    grid-column: -1/1;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.cards-wrapper section {
+    border: 1px solid #272727;
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.cards-wrapper section .content {
+    padding: 15px 20px 40px;
+}
+
+.screenshot img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid #272727;
+}
+
+footer {
+    padding: 15px 10px;
+    margin-top: 30px;
+}
+
+h3 {
+    margin: 10px 0 16px;
+    font-weight: normal;
+}
+
+.cards-wrapper section a,
+.link {
+    color: #0a5485;
+}
+
+#navigation-hamburger:checked ~ nav ul {
+    display: flex;
+}
+
+.navigation-hamburger {
+    display: block;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+nav ul {
+    padding: 10px;
+    list-style-type: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 15px;
+}
+
+.navigation-hamburger img {
+    width: 25px;
+    height: 25px;
+}
+
+.about-me section {
+    border-top: 1px solid rgb(39, 39, 39);
+    padding: 30px 0;
+}
+
+.about-me p {
+    margin-bottom: 0;
+}
